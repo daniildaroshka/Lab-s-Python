@@ -1,17 +1,29 @@
-print('Enter the number of nodes: ', end = '\t')
-n = int(input()) 
+#print('Enter the number of nodes: ', end = '\t')
+#n = int(input()) 
+n=10
 temp = 0
 
 infinity = 10000
 graf = [[0] *n for i in range(n)]
 
-for  i in range(n):
+graf = [[0,6,0,4,0,0,0,0,0,0],
+       [0,0,3,0,0,0,0,0,0,0],
+       [0,0,0,5,1,0,0,8,0,0],
+       [0,0,0,0,0,1,0,3,0,0],
+       [0,0,0,0,0,0,8,0,0,0],
+       [0,0,0,0,0,0,0,5,0,0],
+       [0,0,0,0,0,0,0,5,1,1],
+       [0,0,0,0,0,0,0,0,7,0],
+       [0,0,0,0,0,0,0,0,0,1],
+       [0,0,0,0,0,0,0,0,0,0]]
 
-    graf[i][i] = 0
-    for j in range(i + 1, n, 1):
-        print ('Distanse form ', i + 1, ' to ', j + 1, ' : ', end = '\t')
-        graf[i][j] = int(input())
-        graf[j][i] = graf[i][j]
+
+#for  i in range(n):
+
+#    graf[i][i] = 0
+#    for j in range(i + 1, n, 1):
+#        print ('Distanse form ', i + 1, ' to ', j + 1, ' : ', end = '\t')
+#        graf[i][j] = int(input())
 
 print('\n\n')
 for i in range(n):
